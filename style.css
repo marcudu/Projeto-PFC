@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f8;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.card.ocupado {
+    border: 2px solid red;
+    background: #ffe5e5;
+}
+
+.card.disponivel {
+    border: 2px solid green;
+    background: #e6ffe6;
+}
+
+.card.limpeza {
+    border: 2px solid orange;
+    background: #fff4e0;
+}
+
+.card.manutencao {
+    border: 2px solid #ffb347;
+    background: #fff2cc;
+}
