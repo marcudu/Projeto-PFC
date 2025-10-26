@@ -1,9 +1,7 @@
 from flask import Flask, render_template, redirect, url_for, request, session
 
 app = Flask(__name__)
-app.secret_key = 'sua_chave_secreta_aqui'  # Alterar para algo seguro
-
-# Usuário fixo para teste
+app.secret_key = 'sua_chave_secreta_aqui'  
 USUARIO_FIXO = {'usuario': 'admin', 'senha': '1234'}
 
 @app.route("/", methods=["GET", "POST"])
